@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+	<% items.forEach(function(item) { %>
+	   <li>
+	 	<strong><%= item.nombre %></strong><br>
+		<img src="<%= item.url %>" alt="<%= item.nombre %>" width="150">
+	   </li>
+	<% }); %>
+    </ul>
+    <p>
+        <a href="/login">Iniciar sesión</a>
+    </p>
+  </body>
+</html>
